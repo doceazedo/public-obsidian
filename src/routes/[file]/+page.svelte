@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { error } from '@sveltejs/kit';
 	import PageTitle from '$lib/PageTitle.svelte';
+	import GitHubicon from '$lib/GitHubicon.svelte';
 	import type { FileResponse } from '../[file].json/+server';
 
 	export let data;
@@ -14,8 +15,8 @@
 			const resp = await fetch(`/${data.id}.json`);
 			const json = (await resp.json()) as FileResponse;
 			content = marked.parse(json.content);
-		} catch (e: any) {
-			throw error(e.status || 500, e.message || 'Erro desconhecido');
+		} catch (err: any) {
+			throw error(err.status || 500, err.message || 'Erro desconhecido');
 		}
 	};
 
@@ -25,10 +26,15 @@
 <header class="container">
 	<hgroup>
 		<PageTitle>{data.fileName}.md</PageTitle>
-		<h2>Lorem ipsum dolor sit amet</h2>
+		<h2>{data.description}</h2>
 	</hgroup>
 	<nav>
 		<ul>
+			<li>
+				<a href="https://github.com/{data.repo}">
+					<GitHubicon />
+				</a>
+			</li>
 			<li>
 				<a href="/" role="button">Voltar ao início</a>
 			</li>

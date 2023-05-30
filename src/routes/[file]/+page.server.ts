@@ -2,12 +2,14 @@ import { PUBLIC_FILES } from '$lib/stores';
 import { error } from '@sveltejs/kit';
 import { get } from 'svelte/store';
 
-export const load = ({ params }) => {
+export const load = async ({ params }) => {
 	const publicFiles = get(PUBLIC_FILES);
 	const file = publicFiles[params.file];
 	if (!file) throw error(404, 'Arquivo não encontrado');
 	return {
 		id: params.file,
-		fileName: file.label
+		fileName: file.label,
+		description: file.description,
+		repo: file.repo
 	};
 };
