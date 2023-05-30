@@ -1,38 +1,11 @@
-# create-svelte
+<h1 align="center">My public TO-DOs</h1>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<p align="center">
+  This is a read-only mirror of my TO-DO lists for some of my active public projects. Powered by <a href="https://kit.svelte.dev">SvelteKit</a>, <a href="https://picocss.com">Pico</a> and <a href="https://mega.js.org">MEGA</a>.
+</p>
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<p align="center">
+  <a href="https://todo.doceazedo.com">
+    <img src="static/screenshot.png">
+  </a>
+</p>
