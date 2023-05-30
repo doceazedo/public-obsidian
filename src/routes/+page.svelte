@@ -14,7 +14,7 @@
 	<ul>
 		{#each Object.keys($PUBLIC_FILES) as id}
 			<li>
-				<a href="/{id}">{$PUBLIC_FILES[id].label}</a>
+				<a href="/{id}">{$PUBLIC_FILES[id].fileName.split('.')[0]}</a>
 			</li>
 		{/each}
 	</ul>

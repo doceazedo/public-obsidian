@@ -25,7 +25,7 @@
 
 <header class="container">
 	<hgroup>
-		<PageTitle>{data.fileName}.md</PageTitle>
+		<PageTitle>{data.fileName}</PageTitle>
 		<h2>{data.description}</h2>
 	</hgroup>
 	<nav>

@@ -8,8 +8,6 @@ export const load = async ({ params }) => {
 	if (!file) throw error(404, 'Arquivo não encontrado');
 	return {
 		id: params.file,
-		fileName: file.label,
-		description: file.description,
-		repo: file.repo
+		...file
 	};
 };
