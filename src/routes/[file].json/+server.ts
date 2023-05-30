@@ -1,5 +1,6 @@
 import { get } from 'svelte/store';
 import { error, json } from '@sveltejs/kit';
+import { env } from '$env/dynamic/private';
 import { PUBLIC_FILES } from '$lib/stores';
 import { storage } from '$lib/storage';
 
@@ -7,7 +8,7 @@ export type FileResponse = {
 	content: string;
 };
 
-const activeProjectsNodeId = 'GV8jHa7L';
+const activeProjectsNodeId = env.MEGA_FOLDER_NODEID;
 
 export const GET = async ({ params }) => {
 	const publicFiles = get(PUBLIC_FILES);
