@@ -30,7 +30,7 @@ export const PUBLIC_FILES = writable<PublicFiles>({
 	},
 	overlay: {
 		label: 'Overlay (e bot)',
-		url: 'https://mega.nz/file/2M8GDB5D#rNWZz961vKh17LhhL1zgw-2F3Wg_L-KODFx5B8MLRS0',
+		url: 'https://mega.nz/file/7QlRHR7L#RZM1oMDCJ6ZRTVYk_VoRuCx3tNSmi_wyy4yOQMQIXtk',
 		description: 'Um conjunto com os visuais, comandos e afins das minhas lives',
 		repo: 'doceazedo/overlay'
 	},
