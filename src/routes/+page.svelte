@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { PUBLIC_FILES } from '$lib/stores';
+	import PageTitle from '$lib/PageTitle.svelte';
 </script>
 
 <header class="container">
 	<hgroup>
-		<h1>DoceAzedo.md</h1>
+		<PageTitle>DoceAzedo.md</PageTitle>
 		<h2>Anotações e à fazeres de alguns dos meus projetos públicos ativos</h2>
 	</hgroup>
 </header>

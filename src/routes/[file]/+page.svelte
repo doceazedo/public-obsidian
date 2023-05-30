@@ -2,6 +2,7 @@
 	import { marked } from 'marked';
 	import { onMount } from 'svelte';
 	import { error } from '@sveltejs/kit';
+	import PageTitle from '$lib/PageTitle.svelte';
 	import type { FileResponse } from '../[file].json/+server';
 
 	export let data;
@@ -23,7 +24,7 @@
 
 <header class="container">
 	<hgroup>
-		<h1>{data.fileName}.md</h1>
+		<PageTitle>{data.fileName}.md</PageTitle>
 		<h2>Lorem ipsum dolor sit amet</h2>
 	</hgroup>
 	<nav>
