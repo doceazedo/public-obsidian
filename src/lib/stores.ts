@@ -19,6 +19,11 @@ export const PUBLIC_FILES = writable<PublicFiles>({
 		description: 'Jogo social de fazendinha sendo desenvolvido na UE5',
 		repo: 'doceazedo/fazendoca-ue5'
 	},
+	feministech: {
+		fileName: 'Feministech.md',
+		description: 'Redesign do site da comunidade com SvelteKit',
+		repo: 'doceazedo/feministech'
+	},
 	guessify: {
 		fileName: 'Guessify.md',
 		description: 'Quiz online multiplayer com playlists do Spotify',
