@@ -14,6 +14,11 @@ export const PUBLIC_FILES = writable<PublicFiles>({
 		description: 'Interpretador de emotes da Twitch (BTTV e FFZ)',
 		repo: 'doceazedo/emotettv'
 	},
+	'discord-invite': {
+		fileName: 'discord-invite.md',
+		description: 'Gerador de imagens de convite do Discord',
+		repo: 'doceazedo/discord-invite'
+	},
 	fazendoca: {
 		fileName: 'Fazendoca.md',
 		description: 'Jogo social de fazendinha sendo desenvolvido na UE5',
