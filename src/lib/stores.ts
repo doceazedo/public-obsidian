@@ -39,6 +39,11 @@ export const PUBLIC_FILES = writable<PublicFiles>({
 		description: 'Um conjunto com os visuais, comandos e afins das minhas lives',
 		repo: 'doceazedo/overlay'
 	},
+	'overlay-v3': {
+		fileName: 'Overlay V3.md',
+		description: 'Futuro overlay e bot, super customizável e modular',
+		repo: 'doceazedo/overlay'
+	},
 	website: {
 		fileName: 'Site pessoal.md',
 		description: 'Meu site pessoal e blog',
